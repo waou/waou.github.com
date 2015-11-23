@@ -1,0 +1,19 @@
+<dom-module id="configurable-name-tag">
+    <template>
+        <!-- bind to the "owner" property -->
+        <p>This is <b>{{date}}</b>'s configurable-name-tag element.</p>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: "configurable-name-tag",
+        properties: {
+            // declare the owner property
+            date: {
+                type: String,
+                value: "没啥"
+            }
+        }
+    });
+</script>
